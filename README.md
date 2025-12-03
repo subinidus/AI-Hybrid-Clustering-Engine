@@ -13,6 +13,8 @@
 ## 🛠️ Architecture Pipeline
 이 엔진은 다음 4단계 과정을 통해 데이터를 처리합니다:
 
+![Pipeline](./assets/AI 모델 파이프라인.png)
+
 1.  **Adaptive Super Resolution (EDSR)**: 128px 미만의 저해상도 이미지를 자동으로 감지하여 3배 업스케일링(Upscaling) 수행.
 2.  **Object-Centric Cropping (YOLOv10s)**: 이미지 내의 불필요한 배경(Background Noise)을 제거하고, 핵심 객체(Main Object)만 크롭하여 특징 추출의 정확도 향상.
 3.  **Semantic Embedding (CLIP ViT-B/32)**: 텍스트-이미지 간의 의미적 연관성을 학습한 CLIP 모델을 사용하여 512차원 고수준 특징 벡터 추출.
