@@ -1,0 +1,12 @@
+numpy
+opencv-python
+opencv-contrib-python
+Pillow
+tqdm
+ultralytics
+torch
+torchvision
+scikit-learn
+umap-learn
+kneed
+git+https://github.com/openai/CLIP.git
