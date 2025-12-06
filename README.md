@@ -40,7 +40,7 @@ The engine processes data through the following 4 stages:
 pip install -r requirements.txt
 ```
 
-2. Run Engine
+### 2. Run Engine
 ```
 python cluster_engine.py --image_dir ./data/images --output ./results/clustering_result.json
 ```
@@ -48,10 +48,9 @@ python cluster_engine.py --image_dir ./data/images --output ./results/clustering
 
 --output: Path to save the result JSON file.
 
-📂 Output Structure (JSON)
+## 📂 Output Structure (JSON)
 The result file is saved in a format ready for immediate use in 3D visualization platforms (e.g., Three.js).
-
-JSON
+```
 
 [
     {
@@ -65,5 +64,6 @@ JSON
     },
     ...
 ]
-📜 License
+```
+## 📜 License
 MIT License
