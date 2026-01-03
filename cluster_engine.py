@@ -117,7 +117,12 @@ def main():
             features.append(vec)
             valid_paths.append(os.path.relpath(img_path, args.image_dir))
 
-        except Exception:
+        except (IOError, OSError, cv2.error) as e:
+            print(f"[WARNING] Skipping corrupt file {img_path}: {e}")
+            continue
+
+        except Exception as e:
+            print(f"[ERROR] Unexpected error processing {img_path}: {e}")
             continue
 
     if len(features) < 5:
